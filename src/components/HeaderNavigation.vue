@@ -1,10 +1,10 @@
 <template>
-  <div class="flex justify-between items-center w-1/2 mt-12">
+  <div class="flex justify-between items-center mt-12">
     <h1 class="text-gray-500 font-medium">REMEMBER ME</h1>
     <nav>
-      <button class="bg-blue-200 pb-1.5 px-3.5 rounded text-blue-700">
+      <router-link class="btn-navigation" to="/add-resource">
         <strong class="text-2xl">+</strong> Add
-      </button>
+      </router-link>
     </nav>
   </div>
 </template>

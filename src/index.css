@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-dashed {
+        @apply text-gray-400 border-4 border-dashed w-full rounded-lg h-20 hover:bg-gray-400
+         hover:text-white focus:bg-gray-400 focus:text-white focus:outline-none;
+    }
+
+    .btn-delete {
+        @apply border-gray-300 text-gray-300 text-sm font-bold border-2 w-6 h-6 rounded-full transform
+        hover:border-red-500 hover:text-red-500 hover:scale-125 focus:border-red-500 focus:text-red-500
+        focus:scale-125 focus:outline-none;
+    }
+
+    .btn-navigation {
+        @apply bg-blue-200 pb-1.5 px-3.5 rounded text-blue-700 transform transition duration-500 ease-in-out
+         hover:scale-110 focus:scale-110;
+    }
+}
